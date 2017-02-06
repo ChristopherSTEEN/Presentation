@@ -1,0 +1,22 @@
+.headphoto {
+	display: inline-block;
+	width: 25%
+}
+.headphoto img{
+	width: 75%
+}
+.headtext {
+	width: 70%;
+	font-size: 3vw;
+	display: inline-block
+}
+.title {
+	width: 95%;
+	font-size: 3vw;
+	font-style: bold;
+	text-align: center
+}
+.text {
+	width: 95%;
+	font-size: 2vw
+}	
