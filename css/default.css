@@ -53,7 +53,12 @@ h1 {
 	text-shadow: 5px 2px #4d79ff
 }
 
-h3, h4 {
+h5 {
+	margin-bottom: 5px;
+	margin-top: 15px
+}
+
+h3, h4, h5 {
 	color: #002699;
 	margin-bottom: 20px;
 	text-shadow: 2px 2px #4d79ff
@@ -61,6 +66,10 @@ h3, h4 {
 
 h3, h4, h5 {
 	text-align: center
+}
+
+strong {
+	text-shadow: 2px 2px #00a8e6
 }
 
 .title {
