@@ -1,26 +1,27 @@
-/* MEDIA QUERY */
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 767px) {
 	h1 {
-		font-size: 25px;
+		font-size: 25px
 	}
 	
-	.sm-decoration-right {
+	.jobs-align-text-xs {
+		text-align: center
+	}
+	
+	.jobs-decoration-right-sm {
 		border-right: 0px
 	}
 	
-	.responsive-align-text {
-		text-align: center;	
-	}
 }
 
 @media screen and (min-width: 768px) { 
-	.sm-decoration-right {
+	.jobs-decoration-right-sm {
 		border-right: 10px solid #0086b3
 	}
 }
 
-/* MEDIA QUERY END */
+/* MEDIA QUERIES END */
 
 a, a:hover {
 	color: #002699;
@@ -61,11 +62,14 @@ h5 {
 h3, h4, h5 {
 	color: #002699;
 	margin-bottom: 20px;
+	text-align: center;
 	text-shadow: 2px 2px #4d79ff
 }
 
-h3, h4, h5 {
-	text-align: center
+.photo {
+	border: 2px solid #0086b3;
+	margin: 5px 5px 10px 5px;
+	width: 90%
 }
 
 strong {
@@ -74,10 +78,4 @@ strong {
 
 .title {
 	text-align: center
-}
-
-.photo {
-	border: 2px solid #0086b3;
-	margin: 5px 5px 10px 5px;
-	width: 90%
 }
