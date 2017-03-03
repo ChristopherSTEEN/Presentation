@@ -1,9 +1,65 @@
+/* ABOUT THE CSS FILE */
+
+/* STRUCTURE */
+
+/* >> MEDIA QUERIES <<
+ * 		-> Media print
+ * 		-> Media screen
+ * 		-> Media screen <= 767px
+ * 		-> Media screen >= 768px
+ * >> MEDIA QUERIES END <<
+ * 
+ * ==> Global style
+ * (colors and background don't appear on print)
+
 /* MEDIA QUERIES */
+
+@media print {
+
+	.container {
+		margin-bottom: 5px;
+		margin-top: 5px
+	}
+
+	.hobbies li {
+		display: inline-block;
+		margin-right: 1%;
+		text-align: center
+	}
+	
+	.jobs-decoration-right-sm {
+		border-right: 5px solid black
+	}
+	
+	.title,
+	.print-others {
+		border-bottom: 5px solid black;
+		border-top: 5px solid black
+	}
+	
+}
+
+@media screen {
+
+	.container {
+		background-color: #b3c6ff;
+		box-shadow: 5px 5px 5px #002699;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		padding: 0 10px
+	}
+	
+}
 
 @media screen and (max-width: 767px) {
 	h1 {
 		font-size: 25px
 	}
+	
+	.hobbies li {
+	display: block;
+	text-align: left
+}
 	
 	.jobs-align-text-xs {
 		text-align: center
@@ -16,6 +72,18 @@
 }
 
 @media screen and (min-width: 768px) { 
+
+	.hobbies {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hobbies li {
+		display: inline-block;
+		margin-right: 1%;
+		text-align: center
+	}
+
 	.jobs-decoration-right-sm {
 		border-right: 10px solid #0086b3
 	}
@@ -33,14 +101,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url(../img/back.jpg);
-}
-
-.container {
-	background-color: #b3c6ff;
-	box-shadow: 5px 5px 5px #002699;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	padding: 0 10px
 }
 
 h1, h2, h3, h4, h5, h6 {
