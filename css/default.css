@@ -11,6 +11,7 @@
 
 #index-body {
 	background-image: url(../img/indexback.png);
+	font-family: PixelOperator;
 	margin: 0px;
 }
 
@@ -24,7 +25,6 @@
 	background-color: white;
 	border-radius: 30px;
 	border: 1px dotted black;
-	font-family: PixelOperator;
 	font-size: 250%;
 	margin-top: 50px;
 	margin-left: 10%;
@@ -36,6 +36,16 @@
 	display: inline-block;
 	margin-left: 10%;
 	width: 16%;
+}
+
+#index-heure {
+	background-color: white;
+	font-size: 150%;
+	border-radius: 20px;
+	margin-top: 1%;
+	margin-left: 1%;
+	text-align: center;
+	width: 25%;
 }
 
 #index-version {

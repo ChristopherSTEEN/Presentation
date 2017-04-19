@@ -6,14 +6,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Index de versions</title>
 		<link href="./css/default.css" rel="stylesheet">
+		<script type="text/javascript">
+			function afficher() {
+				var now = new Date();
+				var heure   = now.getHours();
+				var minute  = now.getMinutes();
+				var seconde = now.getSeconds();
+ 
+				document.getElementById('index-heure').innerHTML = "Il est actuellement<br/>" + heure + ":" + minute + ":" + seconde + "."
+			}
+
+			window.onload=function() {
+				afficher();
+				setInterval(afficher,1000);
+			}
+		</script>
 	</head>
 	<body id="index-body">
+		<div id="index-heure"></div>
 		<div id="index-header"><img src="./img/ban.png"></div>
 		<div id="index-presentation">Index de mes diff&eacute;rentes versions de CV<br>
 		La derni&egrave;re version est la plus r&eacute;cente.</div>
 		<div id="index-first-version"><a href="v1.html"><img src="./img/v1.png"></a></div>
 		<div id="index-version"><img src="./img/v2.png"></div>
 		<div id="index-version"><img src="./img/vx.png"></div>
-		<div id="index-version"><img src="./img/vx.png"></div>
+		<div id="index-version"><img src="./img/vx.png"></div> 
 	</body>
 </html>
