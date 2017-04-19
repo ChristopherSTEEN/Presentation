@@ -1,150 +1,53 @@
-/* ABOUT THE CSS FILE */
-
-/* STRUCTURE */
-
-/* >> MEDIA QUERIES <<
- * 		-> Media print
- * 		-> Media screen
- * 		-> Media screen <= 767px
- * 		-> Media screen >= 768px
- * >> MEDIA QUERIES END <<
- * 
- * ==> Global style
- * (colors and background don't appear on print)
-
-/* MEDIA QUERIES */
-
-@media print {
-
-	.container {
-		margin-bottom: 5px;
-		margin-top: 5px
-	}
-
-	.hobbies li {
-		display: inline-block;
-		margin-right: 1%;
-		text-align: center
-	}
-	
-	h1 {
-		font-size: 20px
-	}
-	
-	.jobs-decoration-right-sm {
-		border-right: 5px solid black
-	}
-	
-	.title,
-	.print-others {
-		border-bottom: 5px solid black;
-		border-top: 5px solid black
-	}
-	
+@font-face {
+	font-family: "PixelOperator";
+	src: url('../fonts/PixelOperator.ttf');
 }
 
-@media screen {
-
-	.container {
-		background-color: #b3c6ff;
-		box-shadow: 5px 5px 5px #002699;
-		margin-bottom: 10px;
-		margin-top: 10px;
-		padding: 0 10px
-	}
-	
-}
-
-@media screen and (max-width: 767px) {
-	h1 {
-		font-size: 25px
-	}
-	
-	.hobbies li {
-	display: block;
-	text-align: left
-}
-	
-	.jobs-align-text-xs {
-		text-align: center
-	}
-	
-	.jobs-decoration-right-sm {
-		border-right: 0px
-	}
-	
-}
-
-@media screen and (min-width: 768px) { 
-
-	.hobbies {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.hobbies li {
-		display: inline-block;
-		margin-right: 1%;
-		text-align: center
-	}
-
-	.jobs-decoration-right-sm {
-		border-right: 10px solid #0086b3
-	}
-	
-	p {
-		font-size: 18px
-	}
-	
-}
-
-/* MEDIA QUERIES END */
-
-a, a:hover {
-	color: #002699;
-	text-decoration: none
-}
-
-body {
-	color: #00394d;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: url(../img/back.jpg);
-}
-
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+	font-family: "PixelOperator";
 	font-weight: bold;
+	src: url('../fonts/PixelOperator-Bold.ttf');
 }
 
-h1 {
-	color: #002699;
-	margin-bottom: 10px;
-	margin-top: 0;
-	text-shadow: 5px 2px #4d79ff
+#index-body {
+	background-image: url(../img/indexback.png);
+	margin: 0px;
 }
 
-h5 {
-	margin-bottom: 5px;
-	margin-top: 15px
-}
-
-h3, h4, h5 {
-	color: #002699;
-	margin-bottom: 20px;
+#index-header {
+	margin-left: 25%;
 	text-align: center;
-	text-shadow: 2px 2px #4d79ff
+	width: 50%;
 }
 
-.photo {
-	border: 2px solid #0086b3;
-	margin: 5px 5px 10px 5px;
-	width: 90%
+#index-presentation {
+	background-color: white;
+	border-radius: 30px;
+	border: 1px dotted black;
+	font-family: PixelOperator;
+	font-size: 250%;
+	margin-top: 50px;
+	margin-left: 10%;
+	padding-left: 5%;
+	width: 80%;
 }
 
-strong {
-	text-shadow: 2px 2px #00a8e6
+#index-first-version {
+	display: inline-block;
+	margin-left: 10%;
+	width: 16%;
 }
 
-.title {
-	text-align: center
+#index-version {
+	display: inline-block;
+	margin-left: 5%;
+	width: 16%;
+}
+
+#index-first-version, #index-version {
+	margin-top: 50px;
+}
+
+#index-version img, #index-first-version img {
+	width: 90%;
 }
