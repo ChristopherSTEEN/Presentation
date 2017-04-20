@@ -6,21 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Index de versions</title>
 		<link href="./css/default.css" rel="stylesheet">
-		<script type="text/javascript">
-			function afficher() {
-				var now = new Date();
-				var heure   = now.getHours();
-				var minute  = now.getMinutes();
-				var seconde = now.getSeconds();
- 
-				document.getElementById('index-heure').innerHTML = "Il est actuellement<br/>" + heure + ":" + minute + ":" + seconde + "."
-			}
-
-			window.onload=function() {
-				afficher();
-				setInterval(afficher,1000);
-			}
-		</script>
+		<script rel="text/javascript" src="./js/index-script.js"></script>
 	</head>
 	<body id="index-body">
 		<div id="index-heure"></div>

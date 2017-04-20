@@ -11,6 +11,9 @@
 
 #index-body {
 	background-image: url(../img/indexback.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: fixed;
 	font-family: PixelOperator;
 	margin: 0px;
 }
