@@ -1,0 +1,49 @@
+h1 {
+	margin: 0px;
+}
+
+#header {
+	border: 1px solid blue;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px blue;
+	margin-left: 5%;
+	width: 90%;
+}
+
+#header-info {
+	vertical-align: top;
+	width: 60%;
+}
+
+#header-pict {
+	width: 25%;
+}
+
+#header-pict img {
+	margin: 10%;
+	width: 80%;
+}
+
+#header-info, #header-pict {
+	display: inline-block;
+	margin-left: 5%;
+}
+
+p {
+	margin: 0px;
+	margin-top: 5%;
+}
+
+#title {
+	border: 1px solid blue;
+	border-radius: 25px;
+	box-shadow: 5px 5px 5px blue;
+	color: blue;
+	margin-top: 3%;
+	margin-left: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	width: 90%;
+}
